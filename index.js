@@ -19,8 +19,8 @@
 //  console.log(book1.title);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- const myDate = new Date();
-let object = myDate;
+//  const myDate = new Date();
+// let object = myDate;
 
 // do {
 //   object = Object.getPrototypeOf(object);
@@ -31,32 +31,45 @@ let object = myDate;
 // Object { }
 // null
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-function Student() {
+// function Student() {
+// }
+
+// Student.prototype.sayName = function() {
+//   console.log(this.name)
+// }
+
+
+// function EighthGrader(name) {
+//   this.name = name
+//   this.grade = 8
+// }
+
+// // don't do this!!!
+// EighthGrader.prototype = Object.create(Student.prototype)
+
+// function NinthGrader(name) {
+//   this.name = name
+//   this.grade = 9
+// }
+
+// // // noooo! not again!
+// NinthGrader.prototype = Object.create(Student.prototype)
+
+// NinthGrader.prototype.sayName = function() {console.log("HAHAHAHAHAHA")}
+
+// const carl = new NinthGrader("carl")
+// // console.log(carl.sayName())
+// carl.sayName() //uh oh! this logs "HAHAHAHAHAHA" because we edited the sayName function!
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let myLibrary = [];
+
+function Book() {
+  // the constructor...
 }
 
-Student.prototype.sayName = function() {
-  console.log(this.name)
+function addBookToLibrary() {
+  // do stuff here
 }
-
-
-function EighthGrader(name) {
-  this.name = name
-  this.grade = 8
-}
-
-// don't do this!!!
-EighthGrader.prototype = Object.create(Student.prototype)
-
-function NinthGrader(name) {
-  this.name = name
-  this.grade = 9
-}
-
-// // noooo! not again!
-NinthGrader.prototype = Object.create(Student.prototype)
-
-NinthGrader.prototype.sayName = function() {console.log("HAHAHAHAHAHA")}
-
-const carl = new NinthGrader("carl")
-// console.log(carl.sayName())
-carl.sayName() //uh oh! this logs "HAHAHAHAHAHA" because we edited the sayName function!
