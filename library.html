@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="library.css">
 </head>
 <body>
-    <h1 id="my-text">hello</h1>
-    <button onclick="addBookToLibrary()"></button>
 
-    
-<form  >
+
+<form>
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" value="John"><br>
     <label for="lname">Last name:</label><br>
@@ -22,6 +20,21 @@
     <input  type="button" onclick="addBookToLibrary()"  value="Submit" >
   </form> 
 
+  <button onclick="generateTable()">
+    generate the table
+  </button>
+
+
+  <div style="margin:20px">
+    <table id="table1" style=" border-collapse: collapse;">
+        <tr id="tr">
+            <th>Title</th>
+            <th>Author Name</th>
+            <th>Number Of Pages </th>
+            <th>Is It Read</th>
+        </tr>
+    </table>
+</div>
 
   <script src="library.js"></script>
 </body>
